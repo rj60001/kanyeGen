@@ -1,3 +1,5 @@
+import random
+
 def kanyeGen(length):
 	words = ["woop", "de", "scoop", "poop", "diddy", "foop"]
 	lyric = ""
@@ -6,3 +8,4 @@ def kanyeGen(length):
 	num = random.randint(0, 5)
 	lyric += " "+words[num]
 	return lyric
+	
