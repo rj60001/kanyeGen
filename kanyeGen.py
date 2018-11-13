@@ -9,11 +9,11 @@ def lyricGen(length):
 	lyric += " "+words[num]
 	return lyric
 
-def paragraphGen(length):
+def paragraphGen(length, lyricLength = random.randint(1, 15)):
 	paragraph = ""
 	if length != 0:
-		paragraph = paragraphGen(length-1)
-	paragraph += ""+lyricGen(1)+"\n"
+		paragraph = paragraphGen(length-1, lyricLength = random.randint(1, 15))
+	paragraph += ""+lyricGen(lyricLength)+"\n"
 	return paragraph
 
 def songGen(length = random.randint(3, 13), paragraphLength = random.randint(1, 15)):
